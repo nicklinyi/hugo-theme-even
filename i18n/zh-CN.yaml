@@ -44,13 +44,13 @@ readMore:
   other: "阅读更多"
 
 reward:
-  other: "赞赏支持"
+  other: "捐赠支持"
 
 rewardAlipay:
-  other: "支付宝打赏"
+  other: "支付宝捐赠"
 
 rewardWechat:
-  other: "微信打赏"
+  other: "微信捐赠"
 
 wordCount:
   one: "约 {{ .Count }} 字"
