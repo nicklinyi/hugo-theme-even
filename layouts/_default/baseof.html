@@ -21,19 +21,23 @@
         {{ partial "header.html" . }}
     </header>
     {{- end }}
-
+    
     <main id="main" class="main">
+      {{ block "main" . }}
       <div class="content-wrapper">
         <div id="content" class="content">
           {{ block "content" . }}{{ end }}
         </div>
         {{ partial "comments.html" . }}
       </div>
+      {{ end }}
     </main>
 
     {{ if not .Params.hideHeaderAndFooter -}}
     <footer id="footer" class="footer">
+      {{ block "footer" . }}
       {{ partial "footer.html" . }}
+      {{ end }}
     </footer>
     {{- end }}
 
